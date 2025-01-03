@@ -8,7 +8,7 @@ class CalculatorTest_Exception {
 
 Calculator calculator = new Calculator();
 
-//exception 1. 0
+	//exception 1. 0
 	@Test // Div exception 여부만 확인
 	void testDivide_Zero() throws Exception {
 		assertThrows(Exception.class, () -> calculator.divide(4, 0),"0 예외처리 발생");
@@ -49,7 +49,8 @@ Calculator calculator = new Calculator();
 	void testCalculate_operatorNull() throws Exception {
 		assertThrows(Exception.class, () -> calculator.calculate(null, 0, 0),"null은 입력 불가");	
 	}
-	
+
+	//*error 발생
 	//null - assertThrows & assertEqulas         
 	@Test
 	void testCalculate_nullException() throws Exception {
